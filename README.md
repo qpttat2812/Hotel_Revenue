@@ -38,3 +38,25 @@ Analyze project with MySQL and PowerBI, Exploratory Data Analysis
 14. <b>country</b>: Country of origin. Categories are represented in the ISO 3155–3:2013 format
 15. <b>market_segment</b>: Market segment designation. In categories, the term “TA” means “Travel Agents” and “TO” means “Tour Operators”
 16. <b>distribution_channel</b>: Booking distribution channel. The term “TA” means “Travel Agents” and “TO” means “Tour Operators”
+17. <b>is_repeated_guest</b>: Value indicating if the booking name was from a repeated guest (1) or not (0)
+18. <b>previous_cancellations</b>: Number of previous bookings that were cancelled by the customer prior to the current booking
+19. <b>previous_bookings_not_canceled</b>: Number of previous bookings not cancelled by the customer prior to the current booking
+20. <b>reserved_room_type</b>: Code of room type reserved. Code is presented instead of designation for anonymity reasons
+21. <b>assigned_room_type</b>: Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type due
+22. <b>booking_changes</b>: Number of changes/amendments made to the booking from the moment the booking was entered on the PMS
+23. <b>deposit_type</b>: Indication on if the customer made a deposit to guarantee the booking. This variable can assume three categories: No Deposit – no deposit
+24. <b>agent</b>: ID of the travel agency that made the booking
+25. <b>company</b>: ID of the company/entity that made the booking or responsible for paying the booking. ID is presented instead of designation for
+26. <b>days_in_waiting_list</b>: Number of days the booking was in the waiting list before it was confirmed to the customer
+27. <b>customer_type</b>: Type of booking, assuming one of four categories: Contract - when the booking has an allotment or other type of
+28. <b>adr</b>: Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights
+29. <b>required_car_parking_spaces</b>: Number of car parking spaces required by the customer
+30. <b>total_of_special_requests</b>: Number of special requests made by the customer (e.g. twin bed or high floor)
+  31. <b>reservation_status</b>: Reservation last status, assuming one of three categories: Canceled – booking was canceled by the customer; Check-Out
+  32. <b>reservation_status_date</b>: Date at which the last status was set. This variable can be used in conjunction with the ReservationStatus to
+  33. <b>discount</b>: Discount rate for each market segment
+  34. <b>cost</b>: Cost of meal
+ 
+### Data Model Relationship:
+* Hotel_revenue n-1 Meal_Cost (key = meal)
+* Hotel_revenue n-1 Market_Segment (key = market_segment)
