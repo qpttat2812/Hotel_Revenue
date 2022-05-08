@@ -159,7 +159,7 @@ from hotel_canceled_booking
 group by hotel
 order by canceled_booking desc;
 /* number of cancelling booking 'City Hotel', '17447'
-								'Resort Hotel', '9304'
+				'Resort Hotel', '9304'
 */        
 
 -- 10. room type is most popular
