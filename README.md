@@ -60,3 +60,7 @@ Analyze project with MySQL and PowerBI, Exploratory Data Analysis
 ### Data Model Relationship:
 * Hotel_revenue n-1 Meal_Cost (key = meal)
 * Hotel_revenue n-1 Market_Segment (key = market_segment)
+
+### Report:
+
+![PowerBI Dashboard Report](https://github.com/ttqp2812fi/Hotel_Revenue/blob/main/hotel_revenue_dashboard.png)
